@@ -1,0 +1,31 @@
+div {
+  margin: 0;
+  padding: 0;
+}
+
+container {
+  display: inline-block;
+  border: solid 1px red;
+  width: 1000px;
+  height: 1000px;
+}
+
+.row {
+  margin: 0;
+  padding: 0;
+  height: 25px;
+}
+
+.square {
+  height: 25px;
+  width: 25px;
+  border: solid 1px red;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.square:hover {
+  background-color: #111111;
+}
