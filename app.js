@@ -1,7 +1,7 @@
 let grid = document.querySelector("#container");
 
 
-function makeSquares(num = 32) {
+function makeSquares(num = 22) {
   for (let i = 0; i < num; i++) {
     let row = grid.appendChild(document.createElement("div"));
     row.className = "row";
