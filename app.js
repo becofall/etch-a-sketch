@@ -1,11 +1,11 @@
 let grid = document.querySelector("#container");
 
 
-function makeSquares(num = 22) {
-  for (let i = 0; i < num; i++) {
+function makeSquares(num1 = 16, num2= 22) {
+  for (let i = 0; i < num1; i++) {
     let row = grid.appendChild(document.createElement("div"));
     row.className = "row";
-    for (let j = 0; j < num; j++) {
+    for (let j = 0; j < num2; j++) {
       let cell = document.createElement("div");
       cell.className = "cell";
       row.appendChild(cell);
