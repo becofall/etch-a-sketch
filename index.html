@@ -10,14 +10,7 @@
   <title>Etch-A-Sketch</title>
 </head>
 <body>
-  <div id="size-query">
-    <p>Enter how many rows and columns you want (max. 100)</p>
-    <label for="rows">Rows</label>
-    <input type="text">
-    <label for="columns">Columns</label>
-    <input type="text">
-    <input type="submit" value="Submit">
-  </div>
+  
   <div id="etch-a-sketch">
     <div id="frame">
       <div id="label">Etch-A-Sketch</div>
@@ -25,12 +18,14 @@
         <div id="container"></div>
       </div>
       <div id="knobs">
-        <div id="knob-left"></div>
-        <div id="knob-right"></div>
+        <button class="button knob-left">GRID SIZE</button>
+        <div id="resetGrid"><button>Reset Grid</button></div>
+        <button class="button knob-right">COLOR MODE</button>
       </div>
+
     </div>
   <div>
-  <div id="shake"><p>Shake to clear screen</p></div>
+  
   
   
 </body>
