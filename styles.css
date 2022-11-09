@@ -2,7 +2,12 @@
   border: 1px solid black;
 } */
 
+body {
+  background-color: cadetblue;
+}
+
 div {
+  
   margin: 0;
   padding: 0;
 }
@@ -11,6 +16,7 @@ div {
   display: flex;
   flex-direction: column;
   align-items: center;
+  margin-top: 40px;
 }
 
 #frame {
@@ -18,7 +24,7 @@ div {
   width: 692px;
   height: 555px;
   box-sizing: border-box;
-  background-color: red;
+  background-color: #e90d0d;
   background-image: linear-gradient(to bottom right, rgb(219, 4, 4), rgb(250, 50, 50));
   border-radius: 5px;
   box-shadow: 5px 5px 10px rgb(119, 118, 118);
@@ -54,7 +60,7 @@ div {
   position: relative;
   width: 80%;
   height: 72%;
-  background-color: silver;
+  background-color: #d4d4d2;
   border: 2px solid rgb(172, 172, 172);
   border-radius: 10px;
   margin: auto;
@@ -74,20 +80,19 @@ div {
   align-items: center;
 }
 
-#knob-left {
+.button {
   background-color: rgb(247, 246, 238);
+  font-weight: bold;
+  color: rgb(128, 125, 125);
   width: 60px;
   height: 60px;
+  border: none;
   border-radius: 100%;
   box-shadow: 5px 5px rgb(212, 211, 211);
 }
 
-#knob-right {
-  background-color: rgb(247, 246, 238);
-  width: 60px;
-  height: 60px;
-  border-radius: 100%;
-  box-shadow: 5px 5px rgb(212, 211, 211);
+.button:hover {
+  color: black;
 }
 
 #container {
@@ -116,7 +121,7 @@ div {
   width: 25px;
   border: solid 1px rgb(128, 125, 125);
   border-radius: 20%;
-  background-color: silver;
+  background-color: #d4d4d2;
   display: inline-block;
   box-sizing: border-box;
   margin: 0;
@@ -127,4 +132,14 @@ div {
 .cell:hover {
   background-color: #111111;
   transition-duration: .01s;
+}
+
+#resetGrid button {
+  padding: 500;
+  z-index: -1;
+}
+
+h1 {
+  z-index: 100;
+  font-size: 300px;
 }
