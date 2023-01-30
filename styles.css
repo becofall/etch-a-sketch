@@ -21,8 +21,8 @@ div {
 
 #frame {
   position: absolute;
-  width: 692px;
-  height: 555px;
+  width: 800px;
+  height: 800px;
   box-sizing: border-box;
   background-color: #e90d0d;
   background-image: linear-gradient(to bottom right, rgb(219, 4, 4), rgb(250, 50, 50));
@@ -59,7 +59,7 @@ div {
 #screen {
   position: relative;
   width: 80%;
-  height: 72%;
+  height: 80%;
   background-color: #d4d4d2;
   border: 2px solid rgb(172, 172, 172);
   border-radius: 10px;
@@ -95,28 +95,45 @@ div {
   color: black;
 }
 
-#container {
-  display: flex;
+#board {
+  /* display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(var(--cols), 1fr);
+  grid-template-rows: repeat(var(--rows), 1fr); */
+  /* display: flex;
   flex-direction: column;
-  flex-wrap: nowrap;
+  flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-  margin: 0;
+  margin: auto; */
+  display: grid;
   padding: 0;
   /* border: solid 1px red; */
-  width: 560px;
-  height: 400px;
+  width: 640px;
+  height: 640px;
   margin: 1px;
   
 }
 
-.row {
+.cell {
+  margin: 0;
+  padding: 0;
+  border: solid 1px rgb(128, 125, 125);
+  border-radius: 20%;
+  background-color: #d4d4d2;
+  display: inline-block;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* .row {
   margin: 0;
   padding: 0;
   height: 25px;
-}
+} */
 
-.cell {
+/*.cell {
   height: 25px;
   width: 25px;
   border: solid 1px rgb(128, 125, 125);
@@ -129,10 +146,10 @@ div {
   transition: background-color 9007199254740991s ease-in;
 }
 
-.cell:hover {
+.cell:hover, cell:active {
   background-color: #111111;
-  transition-duration: .01s;
-}
+  transition-duration: .001s;
+} */
 
 #resetGrid button {
   padding: 500;
@@ -142,4 +159,9 @@ div {
 h1 {
   z-index: 100;
   font-size: 300px;
+}
+
+:root {
+  --cols: 1;
+  --rows: 1;
 }
